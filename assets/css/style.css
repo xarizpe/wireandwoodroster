@@ -253,14 +253,25 @@ section{padding:34px 0}
   margin-top:14px;
 }
 
+/* Workflow diagram container */
 .diagram{
   width:100%;
   border:1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(15,17,23,.55);
   padding:16px;
-  overflow:auto;
+  position: relative;
+  overflow: hidden; /* critical */
 }
+
+/* Responsive SVG */
+.diagram svg{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+}
+
 .footer{
   padding:36px 0 44px;
   border-top: 1px solid var(--line);
