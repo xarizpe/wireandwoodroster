@@ -293,3 +293,14 @@ small{color:var(--muted)}
 ul{margin:0; padding-left:18px; color:var(--muted)}
 li{margin:6px 0}
 code{font-family:var(--mono); font-size: .95em; color:rgba(233,238,247,.92)}
+
+.media-img{
+  width:100%;
+  aspect-ratio: 16 / 9;
+  height:auto;
+  object-fit:cover;
+  display:block;
+  border-radius: var(--radius);
+  border:1px solid rgba(233,238,247,.10);
+}
+
