@@ -6,15 +6,17 @@
   <title>Contact — Wire & Wood Roster</title>
   <meta name="description" content="Connect with the roster. General inquiries, licensing & sync, and artist follow links.">
   <meta name="theme-color" content="#0b0c10">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Contact — Wire & Wood Roster">
   <meta property="og:description" content="Connect with the roster. General inquiries, licensing & sync, and artist follow links.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Wire & Wood Roster">
-  <!-- Replace with a real OG image later -->
   <meta property="og:image" content="assets/images/hero-split.svg">
+
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 <header>
   <div class="container">
@@ -24,9 +26,9 @@
         <span>Wire &amp; Wood Roster</span>
       </a>
       <div class="navlinks">
-        <a href="index.html" >Home</a>
-        <a href="roster.html" >The Roster</a>
-        <a href="process.html" >The Process</a>
+        <a href="index.html">Home</a>
+        <a href="roster.html">The Roster</a>
+        <a href="process.html">The Process</a>
         <a href="contact.html" aria-current="page">Contact</a>
       </div>
     </nav>
@@ -38,38 +40,83 @@
     <section>
       <div class="card">
         <h1 style="margin:0 0 6px">Connect with The Roster</h1>
-        <p class="lead">General inquiries, licensing, and social links.</p>
+        <p class="lead">General inquiries, licensing, and artist connections.</p>
         <div class="hr"></div>
 
         <div class="grid-2">
+
+          <!-- CONTACT DETAILS -->
           <div class="card" style="background: rgba(15,17,23,.35)">
-            <h3>Contact</h3>
-            <p><b style="color:var(--text)">General Inquiries:</b> <a class="button" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
-            <p><b style="color:var(--text)">Licensing &amp; Sync:</b> <a class="button" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
-            <p class="notice">Replace both email addresses above with your real address (and optionally use separate inboxes).</p>
+            <h3>Direct Contact</h3>
+
+            <p>
+              <b style="color:var(--text)">General Inquiries:</b><br>
+              <a class="button" href="mailto:xarizpe@gmail.com">xarizpe@gmail.com</a>
+            </p>
+
+            <p>
+              <b style="color:var(--text)">Licensing &amp; Sync:</b><br>
+              <a class="button" href="mailto:xarizpe@gmail.com">xarizpe@gmail.com</a>
+            </p>
+
+            <div class="hr"></div>
+
+            <h3>Send a Message</h3>
+
+            <!-- NETLIFY FORM -->
+            <form name="contact"
+                  method="POST"
+                  data-netlify="true">
+
+              <input type="hidden" name="form-name" value="contact">
+
+              <p>
+                <label>Your Name<br>
+                  <input type="text" name="name" required>
+                </label>
+              </p>
+
+              <p>
+                <label>Your Email<br>
+                  <input type="email" name="email" required>
+                </label>
+              </p>
+
+              <p>
+                <label>Message<br>
+                  <textarea name="message" rows="6" required></textarea>
+                </label>
+              </p>
+
+              <button class="button primary" type="submit">Send Message</button>
+            </form>
+
+            <p class="notice">
+              Messages are securely delivered via Netlify and forwarded to
+              <code>xarizpe@gmail.com</code>.
+            </p>
           </div>
 
+          <!-- SOCIAL -->
           <div class="card" style="background: rgba(15,17,23,.35)">
             <h3>Follow the Artists</h3>
             <ul>
-              <li>Spotify: <a href="#" aria-label="Spotify artist profile (replace link)">[Link to Artist Profile]</a></li>
-              <li>Apple Music: <a href="#" aria-label="Apple Music artist profile (replace link)">[Link to Artist Profile]</a></li>
-              <li>TikTok: <a href="#" aria-label="TikTok Silas Ridge">@SilasRidgeMusic</a></li>
+              <li>Spotify: <a href="#">[Link to Artist Profile]</a></li>
+              <li>Apple Music: <a href="#">[Link to Artist Profile]</a></li>
+              <li>TikTok: <a href="https://www.tiktok.com/@SilasRidgeMusic">@SilasRidgeMusic</a></li>
             </ul>
-            <div class="hr"></div>
-            <p><small>Managed by Rodolfo Arizpe<br>Goleta, California</small></p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="card">
-        <h2 class="section-title">Notes</h2>
-        <p class="lead">
-          If you plan to deploy on GitHub Pages: keep these files in the repo root (as delivered) and enable Pages from the <code>main</code> branch.
-          Replace placeholder links in this page and the Drayven “Pre-Save” button in <a href="roster.html">The Roster</a>.
-        </p>
+            <div class="hr"></div>
+
+            <p>
+              <small>
+                Managed by Rodolfo Arizpe<br>
+                Santa Maria, California
+              </small>
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
   </div>
@@ -82,8 +129,11 @@
         <h3>WireAndWoodRoster.com</h3>
         <p class="lead">Roots in the Earth. Signals in the Air.</p>
         <div class="hr"></div>
-        <p><small>Managed by Rodolfo Arizpe • Goleta, California • © <span data-year></span></small></p>
-        <p class="notice">IMAGE REQUIRED: <code>assets/images/footer-horizon.svg</code> (replace with a panoramic horizon shot: soil/grass below, digital star-grid sky above).</p>
+        <p>
+          <small>
+            Managed by Rodolfo Arizpe • Santa Maria, California • © <span data-year></span>
+          </small>
+        </p>
       </div>
       <div class="panel" style="padding:14px">
         <img src="assets/images/footer-horizon.svg" alt="Footer horizon placeholder">
@@ -91,6 +141,7 @@
     </div>
   </div>
 </footer>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
