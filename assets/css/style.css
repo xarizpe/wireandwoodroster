@@ -330,5 +330,11 @@ code{font-family:var(--mono); font-size: .95em; color:rgba(233,238,247,.92)}
   aspect-ratio: auto; 
 }
 
+/* Add to bottom of style.css */
 
+.artist-subtitle {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.85em; /* Optional: makes the subtitle slightly smaller than the name */
+}
 
