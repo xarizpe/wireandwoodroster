@@ -309,5 +309,26 @@ code{font-family:var(--mono); font-size: .95em; color:rgba(233,238,247,.92)}
   .grid-2{grid-template-columns:1fr}
 }
 
+/* --- Add to bottom of style.css --- */
+
+/* Replaces inline style for the Ordered List */
+.process-list {
+  color: var(--muted);
+  padding-left: 18px;
+  margin: 0;
+}
+
+/* Replaces inline style for the Bold text */
+.text-highlight {
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* Fixes the image stretch issue discussed previously */
+.media-frame {
+  /* Remove aspect-ratio if present, or override it here */
+  aspect-ratio: auto; 
+}
+
 
 
