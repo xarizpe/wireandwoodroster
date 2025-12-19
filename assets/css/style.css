@@ -184,9 +184,7 @@ section{padding:34px 0}
   font-size:16px;
   margin:0;
 }
-@media (max-width: 860px){
-  .grid-2{grid-template-columns:1fr}
-}
+
 .card{
   padding:22px;
   background: rgba(18,20,32,.55);
@@ -315,6 +313,9 @@ code{font-family:var(--mono); font-size: .95em; color:rgba(233,238,247,.92)}
   height:100%;
   object-fit:cover;
   display:block;
+}
+@media (max-width: 860px){
+  .grid-2{grid-template-columns:1fr}
 }
 
 
